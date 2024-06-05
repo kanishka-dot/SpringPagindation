@@ -6,6 +6,8 @@ import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
+
 @Service
 @AllArgsConstructor
 public class CustomerService {
@@ -28,6 +30,11 @@ public class CustomerService {
     public Page<Customer> getAll(int page, int size){
         PageRequest pageRequest = PageRequest.of(page,size);
         Page<Customer> customers = this.customerRepo.findAll(pageRequest);
+        return  customers;
+    }
+
+    public List<Customer> getAll(){
+        List<Customer> customers = this.customerRepo.findAll();
         return  customers;
     }
 

@@ -6,8 +6,11 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.List;
+
 @RestController
 @AllArgsConstructor
+@CrossOrigin(origins = "*")
 public class CustomerController {
     private final CustomerService customerService;
 
@@ -24,5 +27,11 @@ public class CustomerController {
     @ResponseStatus(HttpStatus.CREATED)
     public Page<Customer> getAll(@RequestParam int page, @RequestParam int size){
       return customerService.getAll(page,size);
+    }
+
+    @GetMapping("/customer/v1/customers/getall")
+    @ResponseStatus(HttpStatus.CREATED)
+    public List<Customer> getAll(){
+        return customerService.getAll();
     }
 }

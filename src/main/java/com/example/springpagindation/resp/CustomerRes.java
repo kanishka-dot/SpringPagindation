@@ -1,4 +1,4 @@
-package com.example.springpagindation;
+package com.example.springpagindation.resp;
 
 
 import lombok.AllArgsConstructor;

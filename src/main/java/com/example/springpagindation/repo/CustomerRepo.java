@@ -1,5 +1,6 @@
-package com.example.springpagindation;
+package com.example.springpagindation.repo;
 
+import com.example.springpagindation.model.Customer;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.jpa.repository.JpaRepository;

@@ -1,5 +1,8 @@
-package com.example.springpagindation;
+package com.example.springpagindation.service;
 
+import com.example.springpagindation.req.CustomerReq;
+import com.example.springpagindation.model.Customer;
+import com.example.springpagindation.repo.CustomerRepo;
 import lombok.AllArgsConstructor;
 
 import org.springframework.data.domain.Page;

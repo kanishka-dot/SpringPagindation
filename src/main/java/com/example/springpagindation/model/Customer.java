@@ -1,4 +1,4 @@
-package com.example.springpagindation;
+package com.example.springpagindation.model;
 
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
